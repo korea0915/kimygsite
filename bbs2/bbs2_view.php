@@ -57,8 +57,8 @@ $check = mysqli_fetch_array($result);
     if($user_id == $check['user_id'] || $user_id == "admin")
     {?>  
         <div class='row'>
-        <div class="col-sm-1 offset-sm-10"><a class='btn btn-primary btn-sm' href='./bbs2_modify.php?no=$bbs_no'>수정하기</a></div>
-        <div class="col"><a class='btn btn-primary btn-sm' href='./bbs2_delete.php?no=$bbs_no'>삭제하기</a></div>
+        <div class="col-sm-1 offset-sm-10"><a class='btn btn-primary btn-sm' href='./bbs2_modify.php?no=<?php echo $bbs_no;?>'>수정하기</a></div>
+        <div class="col"><a class='btn btn-primary btn-sm' href='./bbs2_delete.php?no=<?php echo $bbs_no;?>'>삭제하기</a></div>
         </div>
 <?php } ?>
 <hr>

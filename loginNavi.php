@@ -14,7 +14,7 @@
                     $id=$_SESSION['id'];
                 }
                 /* 관리자 혹은 일반 회원 구분 */
-                if($user_id)
+                if(isset($user_id))
                 { if ($user_id == "admin")
                     {?>
                 <!-- 관리자이며 관리자 페이지로 연결 -->
